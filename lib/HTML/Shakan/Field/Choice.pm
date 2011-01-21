@@ -7,7 +7,7 @@ has '+widget' => (
 );
 
 has choices => (
-    is       => 'ro',
+    is       => 'rw',
     isa      => 'ArrayRef',
     required => 1,
 );

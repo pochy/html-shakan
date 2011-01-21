@@ -177,6 +177,12 @@ has fillin_params => (
     },
 );
 
+sub field {
+    my ( $self, $name ) = @_;
+    my ( $field, ) = grep { $_->name eq $name } $self->fields;
+    return $field;
+}
+
 has fields => (
     is       => 'ro',
     isa      => 'ArrayRef',
